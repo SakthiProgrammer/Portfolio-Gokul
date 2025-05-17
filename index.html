@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gokul</title>
+
+  <!--box-icons-->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="main.css" />
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"> </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("U7tCHWLeCTfPsU3fp");
+    })();
+
+  </script>
+
+</head>
+
+<body>
+
+  <!--Header design-->
+
+  <header class="header">
+    <div class="logo-section">
+      <img class="logo-img" src="/images/profile.jpg" alt="">
+      <a href="#" class="logo">GK</a>
+    </div>
+
+    <i class="bx bx-menu" id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#portfolio">Skills</a>
+      <a href="#services">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!--Home section design-->
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, It's Me</h3>
+      <h1>Gokula Kannan</h1>
+      <h3>And I'm a <span>DevOps Engineer</span></h3>
+      <p>
+        A self-motivated, highly skilled, and self-driven aspiring DevOps
+        Engineer with the ability to adapt to any situation and the proven
+        ability to grow oneself and others
+      </p>
+      <div class="social-media">
+        <!-- <a href="https://www.facebook.com/d.s.vel.18?mibextid=ZbWKwL"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.facebook.com/d.s.vel.18?mibextid=ZbWKwL"><i class="bx bxl-instagram"></i></a> -->
+        <a href="https://www.linkedin.com/in/sakthivel-d-93ba23284"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/Gokulkannan-sys"><i class="bx bxl-github"></i></a>
+      </div>
+      <button onclick="downloadResume()" class="btn">Resume</button>
+    </div>
+    <div class="home-img">
+      <img src="images/spaceman.dafa57a8.png" alt="" width="30%" />
+    </div>
+  </section>
+
+  <!--Skills section design-->
+  <section class="portfolio" id="portfolio">
+
+    <h2 class="heading"><span>Skills</span></h2>
+
+    <div class="portfolio-container">
+      <img class="portfolio-box">
+      <img src="">
+      <div class="portfolio-layer">
+        <h4>Web Design</h4>
+
+        <p>This interface is very simple and b</p>
+        <a href="#"><i class='bx bx-link-external'></i></a>
+      </div>
+
+    </div>
+    </div>
+
+  </section>
+
+  <!--Services design-->
+
+  <section class="services" id="services">
+  <div class="education-container">
+    <div class="education">
+      <h2 class="heading"><i class='bx bxs-graduation'></i> Education</h2>
+      <div class="education-card">
+        <div class="education-box">
+          <i class='bx bxs-book-open'></i>
+          <h3>B.E Computer Science</h3>
+          <p class="edu-year">2019 - 2023</p>
+          <p>Computer Science at SASTRA University</p>
+        </div>
+        <div class="education-box">
+          <i class='bx bxs-school'></i>
+          <h3>HSC</h3>
+          <p class="edu-year">2017 - 2019</p>
+          <p>Higher Secondary Schooling at St. Joseph's Matriculation Higher Secondary School</p>
+        </div>
+      </div>
+    </div>
+    <div class="certification">
+      <h2 class="heading"><i class='bx bxs-certification'></i> Certifications</h2>
+      <div class="certification-box">
+        <h3>DevOps Engineer</h3>
+        <p>2024 - 2025</p>
+        <p>DevOps Engineer at Skill-Lync</p>
+      </div>
+      <div class="certification-box">
+        <h3>Cloud Computing</h3>
+        <p>2024 - 2025</p>
+        <p>Cloud Computing at Skill-Lync</p>
+      </div>
+      <div class="certification-box">
+        <h3>Data Science</h3>
+        <p>2024 - 2025</p>
+        <p>Data Science at Skill-Lync</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!--Projects section design-->
+
+  <section class="projects" id="projects">
+
+    <h2 class="heading"><span>Projects</span></h2>
+
+    <div class="portfolio-container">
+      <img class="portfolio-box">
+      <img src="">
+      <div class="portfolio-layer">
+        <h4>Web Design</h4>
+
+        <p>This interface is very simple and b</p>
+        <a href="#"><i class='bx bx-link-external'></i></a>
+      </div>
+
+    </div>
+    </div>
+
+  </section>
+
+  <!--about section design-->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="images/jocker.png" alt="" />
+    </div>
+
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <h3>DevOps Engineer</h3>
+      <p>
+        I’m passionate about writing clean, efficient automation scripts and building reliable CI/CD pipelines from the
+        ground up. There’s something incredibly rewarding about watching infrastructure evolve and deployments become
+        seamless.</p>
+      <p>I enjoy solving challenges like reducing build times, automating tedious processes, and improving system
+        observability. Working with tools like Docker, Kubernetes, Jenkins, GitHub Actions, and Terraform, I strive to
+        build systems that are scalable, secure, and resilient.</p>
+
+      <p>
+        As a DevOps Engineer, I find it intellectually stimulating to bridge development and operations, ensuring fast,
+        stable, and efficient delivery. The best part? The work I do supports global systems, making a measurable and
+        lasting impact.
+      </p>
+      <!-- <a href="#" class="btn">Read More</a> -->
+    </div>
+  </section>
+
+
+
+  <!--contact section desing-->
+
+
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+
+    <form action="">
+
+      <div class="input-box">
+        <input type="text" placeholder="Full Name" id="name" required>
+        <input type="email" placeholder="Email Address " id="email" required>
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Mobile Nuber" id="number" required>
+        <input type="text" placeholder="Email Subject" id="sub" required>
+      </div>
+      <textarea name="" cols="30" rows="15" placeholder="Your Message" id="message" required></textarea>
+      <button onclick="sendemail()" type="button" class="btn">Send Message</button>
+    </form>
+  </section>
+
+
+  <!--footer design-->
+
+  <footer class="footer">
+    <div class="footer-text">
+      <p>copyright & copy;2024 by Sakthivel | All Rights Reserved.
+      </p>
+    </div>
+
+    <div class="footer-icon">
+      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <script src="images/script.js"></script>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script>
+
+
+    function sendemail() {
+
+      var email = document.getElementById("email").value;
+      var from_name = document.getElementById("name").value;
+      var message = document.getElementById("message").value;
+      var number = document.getElementById("number").value;
+      var subject = document.getElementById("sub").value;
+
+
+
+
+      var templateParams = {
+        email: email,
+        subject: subject,
+        to_name: from_name,
+        from_name: from_name,
+        phone: number,
+        message: message
+      };
+
+      emailjs.send('service_tt8yrbd', 'template_foonw0f', templateParams)
+        .then(function (response) {
+          Swal.fire({
+            title: "Success!",
+            text: "Email sended successfully !",
+            icon: "success"
+          });
+
+        })
+    };
+
+    function downloadResume() {
+      // Open in new tab
+      window.open('images/Gokula_Kannan_Resume.pdf', '_blank');
+      // Download
+      const link = document.createElement('a');
+      link.href = 'images/Gokula_Kannan_Resume.pdf';
+      link.download = 'Gokula_Kannan_Resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+  </script>
+
+</body>
+
+</html>
