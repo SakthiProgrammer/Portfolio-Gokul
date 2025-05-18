@@ -35,8 +35,8 @@
 
     <nav class="navbar">
       <a href="#home" class="active">Home</a>
-      <a href="#portfolio">Skills</a>
-      <a href="#services">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#education-section">Education</a>
       <a href="#projects">Projects</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -66,69 +66,189 @@
     <div class="home-img">
       <img src="images/spaceman.dafa57a8.png" alt="" width="30%" />
     </div>
+    <!-- Scroll Down Icon -->
+    <div class="scroll-down">
+      <div class="chevrons">
+        <p class='bx bx-chevron-down'></p>
+        <p class='bx bx-chevron-down'></p>
+        <p class='bx bx-chevron-down'></p>
+      </div>
+      <!-- <span class="scroll-text">Scroll</span> -->
+    </div>
   </section>
 
   <!--Skills section design-->
-  <section class="portfolio" id="portfolio">
-
+  <section class="skills" id="skills">
     <h2 class="heading"><span>Skills</span></h2>
 
-    <div class="portfolio-container">
-      <img class="portfolio-box">
-      <img src="">
-      <div class="portfolio-layer">
-        <h4>Web Design</h4>
+    <div class="skills-container">
+      <div class="aws-container skill-animate-top">
+       <div class="container-heading">
+         <h2 class="heading"><img class="skill-icon" src="images/aws-2.svg" alt="AWS" style="width:2.4rem;height:2.4rem;">Services</h2>
+       </div>
+        <div class="aws-skills">
+          <div class="skill-card">
+            <img class="skill-icon" src="images/amazon-s3-simple-storage-service.svg" alt="AWS S3">
+            <hr class="skill-divider">
+            <span> S3</span>
+          </div>
+          <div class="skill-card">
+            <img class="skill-icon" src="images/EC2.svg" alt=" EC2">
+            <hr class="skill-divider">
+            <span> EC2</span>
+          </div>
+          <div class="skill-card">
+            <img class="skill-icon" src="images/aws-route53.svg" alt=" Route53">
+            <hr class="skill-divider">
+            <span>Route53</span>
+          </div>
+          <div class="skill-card">
+            <img class="skill-icon" src="images/aws-rds.svg" alt="">
+            <hr class="skill-divider">
+            <span> RDS</span>
+          </div>
+          <div class="skill-card">
+            <img class="skill-icon" src="images/aws-cloudformation-seeklogo.png" alt="">
+            <hr class="skill-divider">
+            <span>Cloudformation</span>
+          </div>
+          <div class="skill-card">
+            <img class="skill-icon" src="images/CloudWatch.svg" alt="">
+            <hr class="skill-divider">
+            <span>Cloud Watch</span>
+          </div>
+          <div class="skill-card">
+            <img class="skill-icon" src="images/aws-sns.svg" alt="">
+            <hr class="skill-divider">
+            <span>SNS</span>
+          </div>
 
-        <p>This interface is very simple and b</p>
-        <a href="#"><i class='bx bx-link-external'></i></a>
+          <div class="skill-card">
+            <img class="skill-icon" src="images/Auto Scaling.svg" alt="">
+            <hr class="skill-divider">
+            <span>Auto Scaling</span>
+          </div>
+
+          <div class="skill-card">
+            <img class="skill-icon" src="images/Elastic Container Service.svg" alt="">
+            <hr class="skill-divider">
+            <span>ECS</span>
+          </div>
+          
+          <div class="skill-card">
+            <img class="skill-icon" src="images/Elastic Load Balancing.svg" alt="">
+            <hr class="skill-divider">
+            <span>Load Balancing</span>
+          </div>
+           
+          <div class="skill-card">
+            <img class="skill-icon" src="images/Virtual Private Cloud.svg" alt="">
+            <hr class="skill-divider">
+            <span>VPS</span>
+          </div>
+
+        </div>
       </div>
-
+      <div class="devops-container skill-animate-bottom">
+        <h2 class="heading"><img class="skill-icon" src="images/devops-2.svg" alt="DevOps" style="width:2.4rem;height:2.4rem;"> DevOps</h2>
+        <div class="devops-skills">
+          <div class="skill-card">
+            <img class="skill-icon" src="images/kubernets.svg" alt="Kubernetes">
+            <hr class="skill-divider">
+            <span>Kubernetes</span>
+          </div>
+          <div class="skill-card">
+            <img class="skill-icon" src="images/docker.svg" alt="Docker">
+            <hr class="skill-divider">
+            <span>Docker</span>
+          </div>
+          <div class="skill-card">
+            <img class="skill-icon" src="images/git-icon.svg" alt="Git">
+            <hr class="skill-divider">
+            <span>Git</span>
+          </div>
+          <div class="skill-card">
+            <img class="skill-icon" src="images/github-icon-1.svg" alt="GitHub">
+            <hr class="skill-divider">
+            <span>GitHub</span>
+          </div>
+          <div class="skill-card">
+            <img class="skill-icon" src="images/jenkins-1.svg" alt="Jenkins">
+            <hr class="skill-divider">
+            <span>Jenkins</span>
+          </div>
+          <div class="skill-card">
+            <img class="skill-icon" src="images/terraform-enterprise.svg" alt="Terraform">
+            <hr class="skill-divider">
+            <span>Terraform</span>
+          </div>
+          <div class="skill-card">
+            <img class="skill-icon" src="images/linux-tux.svg" alt="Linux">
+            <hr class="skill-divider">
+            <span>Linux</span>
+          </div>
+          <div class="skill-card">
+            <img class="skill-icon" src="images/ansible.svg" alt="Ansible">
+            <hr class="skill-divider">
+            <span>Ansible</span>
+          </div>
+          <div class="skill-card">
+            <img class="skill-icon" src="images/prometheus.svg" alt="Ansible">
+            <hr class="skill-divider">
+            <span>Promethous</span>
+          </div>
+          <div class="skill-card">
+            <img class="skill-icon" src="images/grafana.svg" alt="Ansible">
+            <hr class="skill-divider">
+            <span>Grafana</span>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-
   </section>
 
-  <!--Services design-->
+  <!--Education design-->
 
-  <section class="services" id="services">
-  <div class="education-container">
-    <div class="education">
-      <h2 class="heading"><i class='bx bxs-graduation'></i> Education</h2>
-      <div class="education-card">
-        <div class="education-box">
-          <i class='bx bxs-book-open'></i>
-          <h3>B.E Computer Science</h3>
-          <p class="edu-year">2019 - 2023</p>
-          <p>Computer Science at SASTRA University</p>
+  <section class="education-section" id="education-section">
+    <h3 class="heading">Education</h3>
+    <div class="education-container">
+      <div class="education  skill-animate-bottom">
+        <h2 class="heading"><i class='bx bxs-graduation'></i> Academic</h2>
+        <div class="education-card">
+          <div class="education-box">
+            <i class='bx bxs-book-open'></i>
+            <h3>B.E Computer Science</h3>
+            <p class="edu-year">2019 - 2023</p>
+            <p>Computer Science at SASTRA University</p>
+          </div>
+          <div class="education-box">
+            <i class='bx bxs-school'></i>
+            <h3>HSC</h3>
+            <p class="edu-year">2017 - 2019</p>
+            <p>Higher Secondary Schooling at St. Joseph's Matriculation Higher Secondary School</p>
+          </div>
         </div>
-        <div class="education-box">
-          <i class='bx bxs-school'></i>
-          <h3>HSC</h3>
-          <p class="edu-year">2017 - 2019</p>
-          <p>Higher Secondary Schooling at St. Joseph's Matriculation Higher Secondary School</p>
+      </div>
+      <div class="certification  skill-animate-top">
+        <h2 class="heading"><i class='bx bxs-certification'></i> Certifications</h2>
+        <div class="certification-box">
+          <h3>DevOps Engineer</h3>
+          <p>2024 - 2025</p>
+          <p>DevOps Engineer at Skill-Lync</p>
+        </div>
+        <div class="certification-box">
+          <h3>Cloud Computing</h3>
+          <p>2024 - 2025</p>
+          <p>Cloud Computing at Skill-Lync</p>
+        </div>
+        <div class="certification-box">
+          <h3>Data Science</h3>
+          <p>2024 - 2025</p>
+          <p>Data Science at Skill-Lync</p>
         </div>
       </div>
     </div>
-    <div class="certification">
-      <h2 class="heading"><i class='bx bxs-certification'></i> Certifications</h2>
-      <div class="certification-box">
-        <h3>DevOps Engineer</h3>
-        <p>2024 - 2025</p>
-        <p>DevOps Engineer at Skill-Lync</p>
-      </div>
-      <div class="certification-box">
-        <h3>Cloud Computing</h3>
-        <p>2024 - 2025</p>
-        <p>Cloud Computing at Skill-Lync</p>
-      </div>
-      <div class="certification-box">
-        <h3>Data Science</h3>
-        <p>2024 - 2025</p>
-        <p>Data Science at Skill-Lync</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
   <!--Projects section design-->
 
@@ -205,7 +325,7 @@
 
   <footer class="footer">
     <div class="footer-text">
-      <p>copyright & copy;2024 by Sakthivel | All Rights Reserved.
+      <p>copyright & copy; 2025 by Gokul | All Rights Reserved.
       </p>
     </div>
 
@@ -222,54 +342,6 @@
   <script src="https://smtpjs.com/v3/smtp.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-  <script>
-
-
-    function sendemail() {
-
-      var email = document.getElementById("email").value;
-      var from_name = document.getElementById("name").value;
-      var message = document.getElementById("message").value;
-      var number = document.getElementById("number").value;
-      var subject = document.getElementById("sub").value;
-
-
-
-
-      var templateParams = {
-        email: email,
-        subject: subject,
-        to_name: from_name,
-        from_name: from_name,
-        phone: number,
-        message: message
-      };
-
-      emailjs.send('service_tt8yrbd', 'template_foonw0f', templateParams)
-        .then(function (response) {
-          Swal.fire({
-            title: "Success!",
-            text: "Email sended successfully !",
-            icon: "success"
-          });
-
-        })
-    };
-
-    function downloadResume() {
-      // Open in new tab
-      window.open('images/Gokula_Kannan_Resume.pdf', '_blank');
-      // Download
-      const link = document.createElement('a');
-      link.href = 'images/Gokula_Kannan_Resume.pdf';
-      link.download = 'Gokula_Kannan_Resume.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }
-
-  </script>
 
 </body>
 
