@@ -77,11 +77,14 @@ function sendemail() {
 }
 
 function downloadResume() {
+  const filePath = "images/Gokula_Kannan_Resume.pdf";
+
   // Open in new tab
-  window.open("images/Gokula_Kannan_Resume.pdf", "_blank");
+  window.open(filePath, "_blank");
+
   // Download
   const link = document.createElement("a");
-  link.href = "images/Gokula_Kannan_Resume.pdf";
+  link.href = filePath;
   link.download = "Gokula_Kannan_Resume.pdf";
   document.body.appendChild(link);
   link.click();
