@@ -121,7 +121,7 @@ function processMail(message, email, from_name, number, subject) {
 }
 
 function downloadResume() {
-  const filePath = "images/Gokula_Kannan_Resume.pdf";
+  const filePath = "Gokula_Kannan_Resume.pdf";
 
   // Open in new tab
   window.open(filePath, "_blank");
