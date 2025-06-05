@@ -121,15 +121,15 @@ function processMail(message, email, from_name, number, subject) {
 }
 
 function downloadResume() {
-  const filePath = "Gokula_Kannan_Resume.pdf";
+  const filePath = "images/Gokula_kannan_Resume.pdf"; // Correct relative path
 
   // Open in new tab
   window.open(filePath, "_blank");
 
-  // Download
+  // Trigger download
   const link = document.createElement("a");
   link.href = filePath;
-  link.download = "Gokula_Kannan_Resume.pdf";
+  link.setAttribute("download", "Gokula_kannan_Resume.pdf"); // Use correct case
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
