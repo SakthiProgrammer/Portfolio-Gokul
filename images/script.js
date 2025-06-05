@@ -56,6 +56,50 @@ function sendemail() {
   var number = document.getElementById("number").value;
   var subject = document.getElementById("sub").value;
 
+  if (validate(email, from_name, message, number, subject)) {
+    // Process the email only if validation is successful
+    processMail(message, email, from_name, number, subject);
+  }
+}
+
+function validate(email, from_name, message, number, subject) {
+  if (
+    email === "" ||
+    from_name === "" ||
+    message === "" ||
+    number === "" ||
+    subject === ""
+  ) {
+    Swal.fire({
+      title: "Error!",
+      text: "Please fill all the fields.",
+      icon: "error",
+    });
+    return false;
+  }
+
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    Swal.fire({
+      title: "Error!",
+      text: "Please enter a valid email address.",
+      icon: "error",
+    });
+    return false;
+  }
+
+  if (!/^\d{10}$/.test(number)) {
+    Swal.fire({
+      title: "Error!",
+      text: "Please enter a valid phone number.",
+      icon: "error",
+    });
+    return false;
+  }
+
+  return true;
+}
+
+function processMail(message, email, from_name, number, subject) {
   var templateParams = {
     email: email,
     subject: subject,
