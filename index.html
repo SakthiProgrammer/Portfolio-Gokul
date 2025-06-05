@@ -308,18 +308,18 @@
   <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span></h2>
 
-    <form action="">
+    <form onsubmit="sendEmail(event)">
 
       <div class="input-box">
         <input type="text" placeholder="Full Name" id="name" >
         <input type="email" placeholder="Email Address " id="email" >
       </div>
       <div class="input-box">
-        <input type="number" placeholder="Mobile Nuber" id="number" >
+        <input type="text" placeholder="Mobile Nuber" id="number">
         <input type="text" placeholder="Email Subject" id="sub" >
       </div>
       <textarea name="" cols="30" rows="15" placeholder="Your Message" id="message" ></textarea>
-      <button onclick="sendemail()" type="submit" class="btn">Send Message</button>
+      <button type="submit" class="btn">Send Message</button>
     </form>
   </section>
 

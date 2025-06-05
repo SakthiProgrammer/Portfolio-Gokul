@@ -49,7 +49,8 @@ ScrollReveal().reveal(".home-img,.about-img,.service-container,.contact form", {
 ScrollReveal().reveal(".home-content h1,.about-content h3", { origin: "left" });
 ScrollReveal().reveal(".home-content p,.about-content p", { origin: "right" });
 
-function sendemail() {
+function sendEmail(event) {
+  event.preventDefault();
   var email = document.getElementById("email").value;
   var from_name = document.getElementById("name").value;
   var message = document.getElementById("message").value;
@@ -60,6 +61,14 @@ function sendemail() {
     // Process the email only if validation is successful
     processMail(message, email, from_name, number, subject);
   }
+}
+
+function clear() {
+  document.getElementById("email").value = "";
+  document.getElementById("name").value = "";
+  document.getElementById("message").value = "";
+  document.getElementById("number").value = "";
+  document.getElementById("sub").value = "";
 }
 
 function validate(email, from_name, message, number, subject) {
@@ -112,11 +121,21 @@ function processMail(message, email, from_name, number, subject) {
   emailjs
     .send("service_tt8yrbd", "template_foonw0f", templateParams)
     .then(function (response) {
-      Swal.fire({
-        title: "Success!",
-        text: "Email sended successfully !",
-        icon: "success",
-      });
+      if (response.status === 200) {
+        Swal.fire({
+          title: "Success",
+          text: "Email Sended Successfully !",
+          icon: "success",
+        });
+        clear();
+      } else {
+        Swal.fire({
+          title: "Error!",
+          text: "Please try again later.",
+          icon: "error",
+        });
+      }
+      console.log(response);
     });
 }
 
